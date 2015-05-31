@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Verdana;
+    font-size: 12px;
+}
+
+.delimiter {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 1000px;
+}
+
+article {
+    margin-top: 20px;
+}
+
+article h1 {
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+body + object {
+    display: none;
+}

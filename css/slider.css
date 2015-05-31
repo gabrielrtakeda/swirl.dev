@@ -1,0 +1,67 @@
+.slider {
+    position: relative;
+}
+
+.slider .product {
+    position: relative;
+    text-align: center;
+}
+
+.slider .product .arrow {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    width: 128px;
+    height: 100%;
+    cursor: pointer;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+
+.slider .product .arrow.left {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.slider .product .arrow.right {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.slider .product .arrow.left:hover,
+.slider .product .arrow.right:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.slider .product .arrow .node {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -64px;
+    margin-top: -64px;
+    cursor: pointer;
+}
+
+.slider .product .arrow.left .node {
+    background: url('../images/arrow-left.png');
+}
+
+.slider .product .arrow.right .node {
+    background: url('../images/arrow-right.png');
+}
+
+.slider .product .title {
+    position: absolute;
+    width: 740px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -370px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    padding: 15px 0;
+}

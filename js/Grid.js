@@ -16,9 +16,6 @@ function Grid(productList)
         for (i in this.productList) {
             html += this.processProductHtml(this.productList[i]);
         }
-
-        console.log(html);
-
         $('#products').append(html);
     }
 
@@ -34,16 +31,13 @@ function Grid(productList)
         if (this.count == 1) {
             productHtml = '<div class="row">' + productHtml;
             ++this.count;
-            console.log('open row');
 
         } else if (this.count == 4) {
             productHtml = productHtml + '</div>';
             this.count = 1;
-            console.log('close row');
 
         } else {
             ++this.count;
-            console.log('moving on');
         }
 
         return productHtml;
